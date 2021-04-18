@@ -13,7 +13,7 @@ The following program generates a README file following the same outline as pres
 * [License](#license)
   
 ## Installation
-To install this program, make sure to be in github and click on the green button "Code" to clone repository. Under "SSH", make sure to copy the SSH link and run "git clone (Copy of SSH link) on your terminal. 
+To install this program, make sure to be in github and click on the green button "Code" to clone repository. Under "SSH", make sure to copy the SSH link and run "git clone (Copy of SSH link)" on your terminal. 
   
 ## Usage
 To use this program, make sure you have node.js installed in your computer. Before running the program, go to your termminal and make sure you're in the right path to use the program. Once in the right path, run "node index.js" and a prompt will pop up. Answer the questions however you'd like since the information will be used to generate the README file. Once completed, you can find the new README file within the repository folder you cloned earlier. There, you can review the file and add more information or style it at your liking.
