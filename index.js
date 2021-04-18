@@ -56,57 +56,14 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-const generateREADME = (answers) => {
-    const {projectTitle, description, installation, usage, contributing, tests, github, email, license} = answers;
-    const readMeMarkUp = `# ${projectTitle}
-
-## Description
-${description}
-    
-## Table of Contents
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions?](#questions?)
-* [License](#license)
-    
-## Installation
-${installation}
-    
-## Usage
-${usage}
-    
-## Contributing
-${contributing}
-    
-## Tests
-${tests}
-    
-## Questions?
-If you happen to have any further questions regarding the project, feel free to reach out to:
-
-Github: ${github}
-Email: ${email}
-    
-## License
-${license}`;
-    return readMeMarkUp
-}
-
-// TODO: Create a function to initialize app
 const init = () => {
     inquirer.prompt(questions)
     .then(answers => {
         console.log(answers)
-        const myREADME = generateREADME(answers);
+        const myREADME = generateMarkdown(answers);
         writeOnFile("README.md", myREADME, (err) => {
             err ? console.log(err) : console.log("Success!")
         });
-    })
-    .then(answers => {
-        generateMarkdown(answers);
     })
 };
 
