@@ -50,7 +50,7 @@ const questions = [
     {
         type:"list",
         name:"license",
-        message: "What type of Liscense would you like to add to your README file?",
+        message: "What type of Liscense would you like to add to your README file? (Make sure to fill in the blanks within the [] or <> once generated)",
         choices: ['MIT License', 'GNU GPLv3', 'Apache License 2.0', 'ISC License']
     }
 ];

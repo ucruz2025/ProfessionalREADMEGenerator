@@ -115,31 +115,31 @@ function renderLicenseSection(license) {
   var empty = "N/A";
   switch (license){
     case 'MIT License':
-      const mit = `## MIT License
+      const mit = `
 ${renderLicenseBadge(license)}
   
 ${renderLicenseLink(license)}`;
       return mit;
 
     case 'GNU GPLv3':
-      const gnu = `## GNU GPLv3 License
+      const gnu = `
 ${renderLicenseBadge(license)}
   
 ${renderLicenseLink(license)}`;
       return gnu;
 
     case 'Apache License 2.0':
-      const apache = `## Apache License 2.0
+      const apache = `
 ${renderLicenseBadge(license)}
   
 ${renderLicenseLink(license)}`;
       return apache;
 
     case 'ISC License':
-      const isc = `## ISC License
-  ${renderLicenseBadge(license)}
+      const isc = `
+${renderLicenseBadge(license)}
   
-  ${renderLicenseLink(license)}`;
+${renderLicenseLink(license)}`;
       return isc;
 
     default:
@@ -162,7 +162,7 @@ ${description}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions?](#questions?)
-* [License](#${license})
+* [License](#license)
   
 ## Installation
 ${installation}
@@ -181,7 +181,8 @@ If you happen to have any further questions regarding the project, feel free to 
 
 Github: ${github}
 Email: ${email}
-  
+
+## License
 ${renderLicenseSection(license)}
 `;
   return readMeMarkUp
